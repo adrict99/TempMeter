@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/item_weather_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16">
+
+            <ImageView
+                android:id="@+id/item_weather_image_view"
+                android:layout_width="50dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/city_image_content_description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ImageViewRounded"
+                tools:src="@drawable/ic_city" />
+
+            <TextView
+                android:id="@+id/item_weather_name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/item_weather_date_text_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/item_weather_image_view"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Amsterdam" />
+
+            <TextView
+                android:id="@+id/item_weather_temperature_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/item_weather_image_view"
+                app:layout_constraintTop_toBottomOf="@id/item_weather_date_text_view"
+                tools:text="24/01/2023" />
+
+            <TextView
+                android:id="@+id/item_weather_date_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+                app:layout_constraintBottom_toTopOf="@id/item_weather_temperature_text_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/item_weather_image_view"
+                app:layout_constraintTop_toBottomOf="@id/item_weather_name_text_view"
+                tools:text="20º C" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <!-- Activity -->
+    <string name="main_activity">Main activity</string>
+
+    <!-- Content description -->
+    <string name="city_image_content_description">City image</string>
+
+    <!-- Error -->
+    <string name="error">It wasn\'t possible to load the data you requested.\n Please try again later.</string>
+
+    <!-- Extra -->
+    <string name="average_temperature">Temperature (Avg): %1$dºC</string>
+    <string name="date">Date: %1$s</string>
+
+</resources>
