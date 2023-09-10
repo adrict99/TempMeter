@@ -1,7 +1,7 @@
 
 # Weather App
 
-A Weather App that shows cities and its daily weather data that I originally created on 2021.
+A very simple Weather App that shows cities and its daily weather data that I originally created on 2021.
 
 Requirements:
 
